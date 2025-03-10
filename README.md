@@ -29,8 +29,7 @@ The project is fully modular, separating logic into reusable components:
 - **`user_logic.php`**: Handles user-related operations, including:  
   - `search_by()` → Search for users.  
   - `view_all()` → View all users.  
-  - `pagination()` → Handles paginated results.  
-  - `add_user()` → Adds a new user.  
+  - `pagination()` → Handles paginated results.
 
 ### 🔹 Server-Side Operations  
 These **PHP scripts** handle backend processing:  
