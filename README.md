@@ -10,16 +10,46 @@ A lightweight, open-source blogging platform built with **PHP 8.2**, **MySQL**, 
 Follow these steps to set up BlogApp:  
 
 1. **Install XAMPP** (includes PHP, MySQL, and phpMyAdmin).  
-2. **Import the database**:  
+2. **Create an empty database**:  
    - Open **phpMyAdmin**.  
+   - Create a new database named **`blogapp`**.  
+3. **Import the database schema**:  
+   - Select the **`blogapp`** database.  
    - Execute `blogapp.sql` to create the necessary tables.  
-3. **Move project files**:  
+4. **Move project files**:  
    - Copy the root directory (`blogapp`) from the repository to `xampp/htdocs`.  
-4. **Run the app**:  
+5. **Run the app**:  
    - Open your browser and go to: [`http://localhost/blogapp`](http://localhost/blogapp).  
-5. **You're all set! 🎉**  
+6. **You're all set! 🎉**  
 
 ## ✅ Features  
+### 🔹 Modular Code Structure  
+The project is fully modular, separating logic into reusable components:  
+
+- **`user_logic.php`**: Handles user-related operations, including:  
+  - `search_by()` → Search for users.  
+  - `view_all()` → View all users.  
+  - `pagination()` → Handles paginated results.  
+  - `add_user()` → Adds a new user.  
+
+### 🔹 Server-Side Operations  
+These **PHP scripts** handle backend processing:  
+
+- **User Management**:  
+  - `add_user.php` → Adds a new user to the database.  
+  - `update_profile.php` → Updates user profile information.  
+  - `delete_user.php` → Deletes a user from the database.  
+- **Post Management**:  
+  - `add_post.php` → Allows users to create a new blog post.  
+  - `edit_post.php` → Edits an existing post.  
+  - `delete_post.php` → Deletes a post from the database.  
+- **Comment Management**:  
+  - `add_comment.php` → Adds a comment to a post.  
+  - `delete_comment.php` → Deletes a comment.  
+- **Admin Panel**:  
+  - `admin.php` → Manages posts and users, including searching, filtering, and pagination.  
+  - `search_posts.php` → Filters posts by title or content.  
+
 ### 🔹 Database Structure  
 The **`blogapp`** database includes:  
 - **Users** (username, hashed password [MD5], role: _premium_ / _basic_).  
