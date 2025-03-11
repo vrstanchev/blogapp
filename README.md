@@ -2,55 +2,60 @@
 ![Open Source](https://img.shields.io/badge/Open%20Source-💻-blue)  
 ![PHP](https://img.shields.io/badge/PHP-8.2-777BB4?logo=php)  
 ![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?logo=mysql)  
+![XAMPP](https://img.shields.io/badge/XAMPP-8.2.12-FB7A24?logo=xampp)  
 ![License](https://img.shields.io/badge/License-GPL-blue)  
 
 A lightweight, open-source blogging platform built with **PHP 8.2**, **MySQL**, and **responsive HTML & CSS**.  
 
 ## 🚀 Project Setup  
+
 Follow these steps to set up BlogApp:  
 
-1. **Install XAMPP** (includes PHP, MySQL, and phpMyAdmin).  
+1. **Install XAMPP 8.2.12** (includes PHP, MySQL, and phpMyAdmin).  
 2. **Create an empty database**:  
    - Open **phpMyAdmin**.  
    - Create a new database named **`blogapp`**.  
 3. **Import the database schema**:  
    - Select the **`blogapp`** database.  
-   - Execute `blogapp.sql` to create the necessary tables.  
+   - Import `blogapp.sql` to create the necessary tables.  
 4. **Move project files**:  
-   - Copy the root directory (`blogapp`) from the repository to `xampp/htdocs`.  
-5. **Run the app**:  
-   - Open your browser and go to: [`http://localhost/blogapp`](http://localhost/blogapp).  
-6. **You're all set! 🎉**  
+   - Copy the `blogapp` folder from the repository to `xampp/htdocs/`.  
+5. **Start the server**:  
+   - Open the XAMPP control panel and start **Apache** and **MySQL**.  
+6. **Run the app**:  
+   - Open your browser and go to [`http://localhost/blogapp`](http://localhost/blogapp).  
+7. **You're all set! 🎉**  
 
 ## ✅ Features  
-### 🔹 Modular Code Structure  
-The project is fully modular, separating logic into reusable components:  
 
-- **`user_logic.php`**: Handles user-related operations, including:  
+### 🔹 Modular Code Structure  
+The project follows a modular approach, separating logic into reusable components:  
+
+- **`user_logic.php`**: Handles user-related operations.  
   - `search_by()` → Search for users.  
   - `view_all()` → View all users.  
-  - `pagination()` → Handles paginated results.
+  - `pagination()` → Handles paginated results.  
 
 ### 🔹 Server-Side Operations  
 These **PHP scripts** handle backend processing:  
 
 - **User Management**:  
-  - `add_user.php` → Adds a new user to the database.  
-  - `update_profile.php` → Updates user profile information.  
-  - `delete_user.php` → Deletes a user from the database.  
+  - `add_user.php` → Adds a new user.  
+  - `update_profile.php` → Updates user details.  
+  - `delete_user.php` → Deletes a user.  
 - **Post Management**:  
-  - `add_post.php` → Allows users to create a new blog post.  
+  - `add_post.php` → Creates a new blog post.  
   - `edit_post.php` → Edits an existing post.  
-  - `delete_post.php` → Deletes a post from the database.  
+  - `delete_post.php` → Deletes a post.  
 - **Comment Management**:  
-  - `add_comment.php` → Adds a comment to a post.  
+  - `add_comment.php` → Adds a comment.  
   - `delete_comment.php` → Deletes a comment.  
 - **Admin Panel**:  
-  - `admin.php` → Manages posts and users, including searching, filtering, and pagination.  
-  - `search_posts.php` → Filters posts by title or content.  
+  - `admin.php` → Manages posts and users.  
 
 ### 🔹 Database Structure  
 The **`blogapp`** database includes:  
+
 - **Users** (username, hashed password [MD5], role: _premium_ / _basic_).  
 - **Posts** (blog entries with title, content, timestamps).  
 - **Comments** (user-generated comments under posts).  
@@ -63,22 +68,15 @@ The **`blogapp`** database includes:
 
 ### 🔹 Frontend (UI/UX)  
 - Built using **HTML & CSS** for a clean and simple design.  
-- **Responsive design** implemented with **media queries** to support different screen sizes.  
+- **Responsive design** with **media queries** to support different screen sizes.  
 
 ### 🔹 Navigation Flow  
-- **Home Page (index.php)**:  
-  - Displays **all posts**.  
-- **Admin Panel (admin.php)**:  
-  - Search bar:  
-    - **Filter posts by title** (e.g., `test-2`).  
-    - **Filter posts by content** (search within post body).  
-  - **Pagination**: Navigate between posts using **page numbers** from the navbar.  
-  - Edit/Delete posts directly from the results.  
-- **Profile Page**:  
-  - **Update profile details** (e.g., username, password).  
-
-### 🔹 PHP Naming Conventions  
-- Follows a structured naming style, e.g., `$limited_results`, `$user_role`, etc.  
+- **Home Page (`index.php`)**: Displays all posts.  
+- **Admin Panel (`admin.php`)**:  
+  - Search bar for filtering posts by title or content.  
+  - **Pagination** for browsing posts.  
+  - Edit/Delete posts directly.  
+- **Profile Page**: Update user details.  
 
 ---
 
