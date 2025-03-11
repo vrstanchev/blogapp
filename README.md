@@ -7,13 +7,6 @@
 ![XAMPP](https://img.shields.io/badge/XAMPP-8.2.12-FB7A24?logo=xampp)  
 ![License](https://img.shields.io/badge/License-GPL-blue)  
 ![Version](https://img.shields.io/badge/version-1.0-blue.svg)  
-![Build Status](https://img.shields.io/github/workflow/status/vrstanchev/blogapp.git/CI)  
-![GitHub Stars](https://img.shields.io/github/stars/vrstanchev/blogapp.git?style=social)  
-![Issues](https://img.shields.io/github/issues/vrstanchev/blogapp.git)  
-![Forks](https://img.shields.io/github/forks/vrstanchev/blogapp.git)  
-![Contributors](https://img.shields.io/github/contributors/vrstanchev/blogapp.git)  
-![Dependencies](https://img.shields.io/david/vrstanchev/blogapp.git)  
-![Last Commit](https://img.shields.io/github/last-commit/vrstanchev/blogapp.git)
 
 
 A lightweight, open-source blogging platform built with **PHP 8.2**, **MySQL**, and **responsive HTML & CSS**.  
