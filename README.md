@@ -1,5 +1,6 @@
 # BlogApp 🚀  
 ![Open Source](https://img.shields.io/badge/Open%20Source-💻-blue)  
+![Linux](https://img.shields.io/badge/Developed%20on-Linux-FCC624?logo=linux)  
 ![PHP](https://img.shields.io/badge/PHP-8.2-777BB4?logo=php)  
 ![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?logo=mysql)  
 ![XAMPP](https://img.shields.io/badge/XAMPP-8.2.12-FB7A24?logo=xampp)  
